@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 import operator
+#test
 def Home(request):
     return render(request,'home.html',{'seno' : 'My Name Is Seno'})
 
