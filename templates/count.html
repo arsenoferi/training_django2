@@ -1,0 +1,19 @@
+<h1>Count</h1>
+<h1>Your text:</h1>
+{{ fulltext }}
+<h1> Jumlah wordnya ada :</h1>
+{{count}}
+<br/>
+{{worddict}}
+
+<a href = "{% url 'home' %}"> Start Agin </a>
+
+
+{% for word, count_total in worddict %}
+
+    {{ word }}
+
+
+    {{ count_total }}
+
+{% endfor %}
